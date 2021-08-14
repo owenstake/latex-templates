@@ -44,25 +44,26 @@
 \date{\today}
 
 % Custom title command.
-\renewcommand{\maketitle}{
-	\hspace{.25\textwidth}
-	\begin{minipage}[t]{.5\textwidth}
-\par{\centering{\Huge  \bfseries{\theauthor}}\par}
+\renewcommand{\maketitle} {
+    \begin{minipage}[t]{.5\textwidth}
+        {\Huge \bfseries{\theauthor}}
+        % \par \phone{} 18650395493
+        % \par \email{} :     & \href{mailto:307256078@qq.com}{307256078@qq.com}\\
+        % \vfill
+        \begin{tabular}{rp{.75\linewidth}}
+            \baselineskip=20pt
+            \phone{} :     & \href{tel:18650395493}{+18650395493}\\
+            \email{} :     & \href{mailto:307256078@qq.com}{307256078@qq.com}
+            % \www{} : &\href{https://www.lukesmith.xyz}{https://lukesmith.xyz}
+        \end{tabular}
+        {\footnotesize\color{gray} (Last updated \thedate.)}
 	\end{minipage}
-	\begin{minipage}[t]{.25\textwidth}
-{\footnotesize\hfill{}\color{gray}
-% \hfill{}Download this document:
 
-    \includegraphics[height=1.5in]{cv/head.jpg}
-
-% \hfill{}\href[gray]{https://LukeSmith.xyz/cv.pdf}{https://LukeSmith.xyz/cv.pdf \pdf}
-
-\hfill{}(Last updated \thedate.)
-}
+    \hfill\footnotesize
+    \begin{minipage}[b]{.25\textwidth} % {
+        \smash{\includegraphics[height=1.5in]{cv/head.jpg}}
 	\end{minipage}
 }
-
-
 
 % Setting the font I want:
 \renewcommand{\familydefault}{\sfdefault}
@@ -121,6 +122,7 @@
 \newcommand{\gh}{\includegraphics[height=.85em]{cv/gh.png}}
 \newcommand{\www}{\includegraphics[height=.85em]{cv/www.png}}
 \newcommand{\email}{\includegraphics[height=.85em]{cv/email.png}}
+\newcommand{\phone}{\includegraphics[height=.85em]{cv/phone.png}}
 \newcommand{\ruijie}{\includegraphics[height=.85em]{cv/ruijie.png}}
 \newcommand{\fzu}{\includegraphics[height=.85em]{cv/fzu.png}}
 
@@ -135,23 +137,23 @@
 \setlength{\parindent}{0in}
 
 \begin{document}
-
+% hhaha
 \maketitle
 
 \section{基本信息}
 
 \begin{minipage}[t]{.5\linewidth}
-\begin{tabular}{rp{.75\linewidth}}
-	\baselineskip=20pt
-    \email{} :     & \href{mailto:307256078@qq.com}{307256078@qq.com}\\
-	% \www{} : &\href{https://www.lukesmith.xyz}{https://lukesmith.xyz}
-\end{tabular}
+    \begin{tabular}{rp{.75\linewidth}}
+        \baselineskip=20pt
+        \email{} :     & \href{mailto:307256078@qq.com}{307256078@qq.com}\\
+        \www{} : &\href{https://www.lukesmith.xyz}{https://lukesmith.xyz}
+    \end{tabular}
 \end{minipage}
 \begin{minipage}[t]{.5\linewidth}
-\begin{tabular}{rl}
-	\gh{} : & \href{http://github.com/LukeSmithxyz}{github.com/LukeSmithxyz}\\
-	\yt{} : &\href{http://youtube.com/c/LukeSmithxyz}{youtube.com/c/LukeSmithxyz}
-\end{tabular}
+    \begin{tabular}{rl}
+        \gh{} : & \href{http://github.com/LukeSmithxyz}{github.com/LukeSmithxyz}\\
+        \yt{} : &\href{http://youtube.com/c/LukeSmithxyz}{youtube.com/c/LukeSmithxyz}
+    \end{tabular}
 \end{minipage}
 
 \begin{itemize}
